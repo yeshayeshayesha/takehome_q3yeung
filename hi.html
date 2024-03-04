@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+    
+        /** function getRndInteger(min, max) {
+            return Math.floor(Math.random() * (max - min + 1) ) + min;
+            document.getElementById('demo').innerHTML = "Random Generated Number: " + getRndInteger(100,1000);
+             
+            bod:
+                    <button onclick="document.getElementById('demo').innerHTML = getRndInteger(100,1000)">PRODUCE A NUMBER</button>
+                    <p id="demo"></p>
+        }
+
+        **/
+        const generateBtn = document.getElementById("generate-btn");
+        const outputDiv = document.getElementById("output");
+
+        function generateRandomNumber(){
+            randomNumber = Math.floor(Math.random() * 1001);
+            console.log("Randomly generated number: " + randomNumber);
+
+            let numberString = randomNumber.toString();
+            let hundreds = numberString[0];
+            let tens = numberString[1];
+            let ones = numberString[2];
+
+
+            let breakdown = "Breakdown: " + (hundreds ? hundreds + "00" : "") + ", " + (tens ? tens + "0" : "") + ", " + ones;
+            outputDiv.innerHTML = `<p>${breakdown}</p>`;
+
+
+        }
+
+    </script> 
+</head>
+<body>
+
+    <button id="generate-btn">Generate Random Number</button>
+    <div id="output"></div>
+    
+    <a href="index.html">click to go back to page 1
+
+    </a>
+</html>

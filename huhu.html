@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+            var date = new Date();
+            var wrandom = Math.floor(Math.random()*1001);
+            streng = wrandom.toString();
+
+            let hundreds = numberString[0];
+            let tens = numberString[1];
+            let ones = numberString[2];
+    
+
+            /**let hundreds = hunds.charAt(0);
+            let tens = tenz.charAt(1);
+            let ones = unit.charAt(2);**/
+
+            document.getElementById('wrandom').innerText='Randomly Generated Number: '+ wrandom; 
+            document.getElementById('breakdown').innerHTML = 'Breakdown: hundreds=' + numberString[0] + '00, tens= '+ numberString[1] + '0, ones= ' + numberString[2]; 
+  
+            
+
+
+
+    </script> 
+</head>
+<body>
+    <button onclick="document.getElementById('wrandom').innerText='Randomly Generated Number: '+ wrandom; "> DRAW!</button><br><br>
+    <div id="wrandom"></div><br><br>
+    
+    <button onclick="  document.getElementById('breakdown').innerText= 'Breakdown: hundreds=' + numberString[0] + '00, tens= '+ numberString[1] + '0, ones= ' + numberString[2]; "> BREAKDOWN</button><br><br>
+  
+    <p id=" breakdown"></p>
+    <h1 id="date"></h1>
+    <p>im sorry sir i give up</p>
+
+
+    <a href="index.html">click to go back to page 1
+
+    </a>
+</html>
